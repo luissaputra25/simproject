@@ -1,0 +1,153 @@
+body{
+  background:#f5f4fa;
+  font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+  color:#2f2a3a;
+}
+
+.navbar{
+  transition:0.4s;
+}
+.navbar-transparent{
+  background:transparent;
+}
+.navbar-solid{
+  background:#6b5ca5 !important;
+  box-shadow:0 6px 18px rgba(107,92,165,0.35);
+}
+.navbar a{
+  color:#ffffff !important;
+  font-weight:600;
+}
+
+.hero{
+  background:url("gambardashboardkalimantan.png");
+  background-size:cover;
+  background-position:center;
+  color:rgb(248, 247, 249);
+  padding:170px 20px 150px;
+  text-align:center;
+}
+.hero h1{
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.section-title{
+  border-left:6px solid #8b7cc6;
+  padding-left:14px;
+  margin-bottom:25px;
+  font-weight:700;
+  color:#4a3c7a;
+}
+
+.info-box{
+  background:white;
+  border-radius:18px;
+  padding:25px;
+  text-align:center;
+  box-shadow:0 10px 26px rgba(107,92,165,0.15);
+}
+.info-box h2{
+  color:#6b5ca5;
+  font-weight:800;
+}
+
+.card{
+  border:none;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 8px 22px rgba(107,92,165,0.18);
+}
+.card img{
+  height:200px;
+  object-fit:cover;
+}
+.card:hover{
+  transform:translateY(-6px);
+  transition:0.3s;
+  box-shadow:0 14px 30px rgba(107,92,165,0.28);
+}
+
+.map-wrapper{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 10px 26px rgba(107,92,165,0.15);
+}
+.map-caption{
+  margin-top:15px;
+  font-size:14px;
+  color:#5a5566;
+}
+
+.accordion-button:not(.collapsed){
+  background:#6b5ca5;
+  color:white;
+}
+.accordion-button{
+  font-weight:600;
+}
+.accordion-body a{
+  display:block;
+  padding:5px 0;
+  color:#7b6fb1;
+  text-decoration:none;
+}
+.accordion-body a:hover{
+  text-decoration:underline;
+}
+
+.fade-in{
+  animation:fadeIn 1s ease;
+}
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+.app-title h5{
+  text-align:center;
+  font-weight:700;
+  letter-spacing:1.2px;
+  padding:12px 0;
+  background:linear-gradient(to right,#ebe9f4,#c8c2dd,#ebe9f4);
+  color:#3f3a55;
+  margin:45px 0 30px;
+}
+
+.list-layanan{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:16px;
+  padding-bottom:35px;
+}
+
+.list-layanan a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:140px;
+  height:72px;
+  background:#ffffff;
+  border-radius:10px;
+  box-shadow:0 6px 16px rgba(107,92,165,0.18);
+  transition:0.3s;
+}
+
+.list-layanan a:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 26px rgba(107,92,165,0.28);
+}
+
+.list-layanan img{
+  max-width:115px;
+  max-height:42px;
+  object-fit:contain;
+}
+
+footer{
+  background:#4a3c7a;
+  color:#ffffff;
+  font-size:14px;
+}

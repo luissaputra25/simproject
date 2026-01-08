@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pariwisata Kalimantan Selatan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f4fa;
+  color: #2f2a3a;
+}
+
+header {
+  background: linear-gradient(135deg, #6b5ca5, #4a3c7a);
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(107,92,165,0.35);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header h1,
+header p {
+  color: #ffffff;
+  text-align: center;
+}
+
+section {
+  padding: 60px 0;
+  background: #ffffff;
+  margin-bottom: 25px;
+}
+
+section h2 {
+  color: #4a3c7a;
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.wisata,
+.wisata-3x3 {
+  display: grid;
+  gap: 25px;
+  width: 100%;
+}
+
+.wisata {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.wisata-3x3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .wisata-3x3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(107,92,165,0.18);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 34px rgba(107,92,165,0.28);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h4 {
+  margin: 15px;
+  color: #4a3c7a;
+  text-align: center;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 0 15px 15px;
+  font-size: 14px;
+  color: #5a5566;
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background: #ffffff;
+  color: #2f2a3a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(107,92,165,0.18);
+}
+
+table th,
+table td {
+  border: 1px solid #e3e1ee;
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background: #6b5ca5;
+  color: #ffffff;
+}
+
+table tr:nth-child(even) {
+  background: #f2f1f8;
+}
+
+table tr:hover {
+  background: #e9e6f5;
+}
+
+.video-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.video-box {
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(107,92,165,0.22);
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+footer {
+  background: #4a3c7a;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Pariwisata Kalimantan Selatan</h1>
+  <p>Informasi Kalimantan Selatan</p>
+</header>
+
+<section>
+  <h2>Destinasi Pariwisata Unggulan</h2>
+  <div class="container wisata-3x3">
+
+    <div class="card">
+      <img src="https://liburanyuk.co.id/wp-content/uploads/2022/04/@abangsyaifull.jpg">
+      <h4>Pasar Terapung Lok Baintan</h4>
+      <p>Wisata budaya khas Banjar di Sungai Martapura.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/0tVp8xhi0II/maxresdefault.jpg">
+      <h4>Pantai Tamiang</h4>
+      <p>Pantai eksotis di Kabupaten Tanah Laut.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://dutatv.com/wp-content/uploads/2025/04/IMG_20250416_085702.jpg">
+      <h4>Pegunungan Meratus</h4>
+      <p>Wisata alam pegunungan dan hutan tropis.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://seringjalan.com/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-12-at-1.55.10-PM.jpeg">
+      <h4>Pantai Takisung</h4>
+      <p>Pantai favorit masyarakat Kalimantan Selatan.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://inspirasi.avonturin.id/wp-content/uploads/2022/02/Foto-Sunrise-Bukit-Matang-Kaladan-Tiwingin-Lama-Aranio-Banjar-Kalimantan-Selatan-@harris_jaya_skd-768x523.jpg">
+      <h4>Bukit Matang Kaladan</h4>
+      <p>Bukit dengan panorama pulau-pulau kecil seperti Raja Ampat.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/Fdz32LeVnBk/maxresdefault.jpg">
+      <h4>Danau Seran</h4>
+      <p>Danau bekas tambang dengan pemandangan indah.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://asset-2.tstatic.net/banjarmasin/foto/bank/images/pulau-samber-gelap-kotabaru.jpg">
+      <h4>Pulau Samber Gelap</h4>
+      <p>Pulau eksotis dengan pasir putih dan laut jernih.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://meratusgeopark.org/wp-content/uploads/2019/05/Air-Terjun-Haratai-2.jpg">
+      <h4>Air Terjun Haratai</h4>
+      <p>Air terjun alami di kawasan Pegunungan Meratus.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://1.bp.blogspot.com/-PPGBiZiQY74/W7WVLvA7wzI/AAAAAAAAAWA/-s3oVdn9zS0z1BXCpTBMpWNETcunPPElQCK4BGAYYCw/s1600/Slider-2-Menara_Pandang-BanjarmasinTourism.jpg">
+      <h4>Siring Menara Pandang</h4>
+      <p>Ikon wisata kota Banjarmasin di tepi Sungai Martapura.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Akses Transportasi Wisata</h2>
+  <div class="container">
+    <table>
+      <tr>
+        <th>Destinasi Wisata</th>
+        <th>Transportasi</th>
+        <th>Biaya (±)</th>
+        <th>Waktu Tempuh</th>
+      </tr>
+
+      <tr>
+        <td>Pasar Terapung Lok Baintan</td>
+        <td>Kelotok / Perahu Motor</td>
+        <td>Rp30.000-Rp100.000</td>
+        <td>30-45 menit</td>
+      </tr>
+
+      <tr>
+        <td>Pantai Tamiang</td>
+        <td>Mobil / Travel</td>
+        <td>Rp150.000-Rp250.000</td>
+        <td>3-4 jam</td>
+      </tr>
+
+      <tr>
+        <td>Pegunungan Meratus</td>
+        <td>Motor / Mobil</td>
+        <td>Rp100.000-Rp200.000</td>
+        <td>2-3 jam</td>
+      </tr>
+
+      <tr>
+        <td>Pantai Takisung</td>
+        <td>Mobil / Bus</td>
+        <td>Rp50.000-Rp100.000</td>
+        <td>1-1,5 jam</td>
+      </tr>
+
+      <tr>
+        <td>Bukit Matang Kaladan</td>
+        <td>Motor / Mobil</td>
+        <td>Rp50.000-Rp150.000</td>
+        <td>1-2 jam</td>
+      </tr>
+
+      <tr>
+        <td>Danau Seran</td>
+        <td>Motor / Mobil</td>
+        <td>Rp30.000-Rp80.000</td>
+        <td>30-60 menit</td>
+      </tr>
+
+      <tr>
+        <td>Pulau Samber Gelap</td>
+        <td>Kapal Nelayan</td>
+        <td>Rp300.000-Rp500.000</td>
+        <td>4-5 jam</td>
+      </tr>
+
+      <tr>
+        <td>Air Terjun Haratai</td>
+        <td>Motor / Mobil + Jalan Kaki</td>
+        <td>Rp100.000-Rp200.000</td>
+        <td>2-3 jam</td>
+      </tr>
+
+      <tr>
+        <td>Siring Menara Pandang</td>
+        <td>Angkot / Ojek Online</td>
+        <td>Rp10.000-Rp25.000</td>
+        <td>10-20 menit</td>
+      </tr>
+
+    </table>
+  </div>
+</section>
+
+
+<section>
+  <h2>Transportasi Umum di Kalimantan Selatan</h2>
+  <div class="container">
+    <table>
+      <tr>
+        <th>Jenis Transportasi</th>
+        <th>Wilayah Operasi</th>
+        <th>Keterangan</th>
+      </tr>
+
+      <tr>
+        <td>Bus DAMRI</td>
+        <td>Banjarmasin-Bandara Syamsudin Noor</td>
+        <td>Transportasi resmi, nyaman, dan terjangkau</td>
+      </tr>
+
+      <tr>
+        <td>Angkot</td>
+        <td>Dalam Kota Banjarmasin</td>
+        <td>Transportasi harian masyarakat</td>
+      </tr>
+
+      <tr>
+        <td>Kelotok</td>
+        <td>Sungai Martapura</td>
+        <td>Transportasi air tradisional dan wisata</td>
+      </tr>
+
+      <tr>
+        <td>Travel Antar Kota</td>
+        <td>Antar Kabupaten / Provinsi</td>
+        <td>Nyaman untuk wisatawan</td>
+      </tr>
+
+      <tr>
+        <td>Ojek Online</td>
+        <td>Perkotaan</td>
+        <td>Mudah diakses melalui aplikasi</td>
+      </tr>
+
+      <tr>
+        <td>Bus AKAP / AKDP</td>
+        <td>Terminal Antar Kota</td>
+        <td>Melayani perjalanan jarak jauh</td>
+      </tr>
+
+      <tr>
+        <td>Kapal Penyeberangan</td>
+        <td>Pesisir & Pulau Kecil</td>
+        <td>Akses menuju pulau wisata</td>
+      </tr>
+
+    </table>
+  </div>
+</section>
+
+
+
+
+<section>
+  <h2>Makanan Khas Kalimantan Selatan</h2>
+  <div class="container wisata">
+
+    <div class="card">
+      <img src="https://iknpos.id/wp-content/uploads/2025/01/resep-soto-banjar1.jpg">
+      <h4>Soto Banjar</h4>
+      <p>Soto ayam khas Banjar dengan rempah kuat dan telur rebus.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://indonesiatraveler.id/wp-content/uploads/2020/01/ketupat-kandangan1.jpg">
+      <h4>Ketupat Kandangan</h4>
+      <p>Ketupat dengan kuah santan dan ikan gabus khas Kandangan.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://tempatwisataseru.com/wp-content/uploads/2022/01/Nasi-Kuning-Banjar-via-Cookpad.jpg">
+      <h4>Nasi Kuning Banjar</h4>
+      <p>Nasi kuning dengan sambal habang khas Banjar.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://img-global.cpcdn.com/recipes/a4e14daa82323053/751x532cq70/tongkol-masak-habang-foto-resep-utama.jpg">
+      <h4>Ikan Haruan Bumbu Habang</h4>
+      <p>Ikan gabus dimasak dengan bumbu merah khas Banjar.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/e9yW_EVzZrA/maxresdefault.jpg">
+      <h4>Gangan Asam Banjar</h4>
+      <p>Sayur asam khas Banjar dengan ikan dan rempah.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://img-global.cpcdn.com/recipes/51f35f06d157da3d/680x482cq70/lontong-orari-khas-banjar-foto-resep-utama.jpg">
+      <h4>Lontong Orari</h4>
+      <p>Lontong khas Banjarmasin dengan kuah gurih.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/Z0VYGMbdO28/maxresdefault.jpg">
+      <h4>Pais Patin</h4>
+      <p>Ikan patin berbumbu dibungkus daun dan dikukus.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/xyspURQPi8M/hqdefault.jpg">
+      <h4>Sate Tulang Banjar</h4>
+      <p>Sate tulang sapi dengan bumbu khas Banjar.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section>
+  <h2>Minuman Khas Kalimantan Selatan</h2>
+  <div class="container wisata">
+
+    <div class="card">
+      <img src="https://asset.kompas.com/crops/32ZVJy5_yDoKetcdWOCTpvTuKl0=/0x0:1620x1080/1200x800/data/photo/2022/04/04/624ad98d27419.jpg">
+      <h4>Es Kolang-Kaling</h4>
+      <p>Minuman segar khas Banjar saat Ramadhan.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://img-global.cpcdn.com/recipes/724dc825dedf83cb/680x482cq70/es-limau-kuit-khas-banjar-foto-resep-utama.jpg">
+      <h4>Es Limau Kuit</h4>
+      <p>Minuman jeruk limau khas Banjarmasin.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cf.shopee.co.id/file/4ee22178f431c6e97fe27305d1b053f9">
+      <h4>Teh Kayu Arang</h4>
+      <p>Minuman tradisional Banjar yang dipercaya menyehatkan.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://www.gotravelly.com/blog/wp-content/uploads/2022/01/es-jagung.jpg">
+      <h4>Es Jagung</h4>
+      <p>minuman ini memang dibuat dengan menggunakan bahan utama jagung rebus, gula, susu kental manis.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://www.gotravelly.com/blog/wp-content/uploads/2022/01/lahang-bambu.jpg">
+      <h4>Air Tebu</h4>
+      <p>Minuman alami dari perasan tebu segar.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2024/02/29/4117297281.jpg">
+      <h4>Es Kopyor Banjar</h4>
+      <p>Minuman kelapa segar khas Kalimantan Selatan.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://www.gotravelly.com/blog/wp-content/uploads/2022/01/es-lidah-buaya.jpg">
+      <h4>Es Lidah Buaya</h4>
+      <p>Es Lidah Buaya juga menjadi salah satu minuman khas Kalimantan Selatan.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://www.gotravelly.com/blog/wp-content/uploads/2022/01/kopi-hirang-asli-robusta.jpg">
+      <h4>Kopi Hirang Robusta</h4>
+      <p>Varian kopi yang satu ini tidak hanya disukai oleh masyarakat lokal tetapi juga banyak diburu oleh wisatawan.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section>
+  <h2>Tarian Khas Kalimantan Selatan</h2>
+  <div class="container wisata-3x3">
+
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.6VfuVTjCsgxAC3D4hp4JewHaEK?pid=Api&P=0&h=180">
+      <h4>Tari Baksa Kembang</h4>
+      <p>Tarian penyambutan tamu kehormatan khas suku Banjar.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://1.bp.blogspot.com/-zhoJNLEyFC0/YDbznDpGcGI/AAAAAAAAF4o/wsWv87GK9DQk3ZAsBszhtpn7qsxS8te5ACLcBGAsYHQ/s633/Tari%2BRadap%2BRahayu.JPG">
+      <h4>Tari Radap</h4>
+      <p>Tarian bernuansa Islami yang berkembang di masyarakat Banjar.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.idntimes.com/content-images/community/2020/12/tradisi-dayak-ngaju-9946d2b64b240dd1850c8719f35d2ca8-7ca3ba9321845f0b409250fdce55ba7b.jpg">
+      <h4>Tari Kanjar</h4>
+      <p>Tarian khas kalimantan selatan</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Hewan Endemik Kalimantan Selatan</h2>
+  <div class="container wisata-3x3">
+
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.OC6RqGYcGkH9OcWzSiBIcQHaE7?pid=Api&P=0&h=180">
+      <h4>Bekantan</h4>
+      <p>Primata endemik Kalimantan dan maskot Kalimantan Selatan.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://ik.imagekit.io/goodid/gnfi/uploads/articles/large-macan-dahan-kalimantan-predator-puncak-penguasa-hutan-yang-terancam-punah-gVzawyKDDy.jpg?tr=w-730,h-486,fo-center">
+      <h4>Macan Dahan</h4>
+      <p>Kucing besar liar yang hidup di hutan Kalimantan.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.NFkxwOfIo3qqL677IluYogHaFj?pid=Api&P=0&h=180">
+      <h4>Burung Enggang</h4>
+      <p>Burung khas Kalimantan yang dianggap sakral.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Kebudayaan Khas Kalimantan Selatan</h2>
+  <div class="container wisata-3x3">
+
+    <div class="card">
+      <img src="https://propertyklik.com/tips-properti/wp-content/uploads/2024/04/rumah-adat-kalimantan-selatan.jpg">
+      <h4>Rumah Bubungan Tinggi</h4>
+      <p>Rumah adat suku Banjar dengan atap tinggi dan khas.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://2.bp.blogspot.com/--GQTujOFUuw/UGD2Cog36NI/AAAAAAAAAEI/k9WRLGcmHz0/s1600/IMG-20120918-00103.jpg">
+      <h4>Kain Sasirangan</h4>
+      <p>Kain tradisional Banjar bermotif ikat celup.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://static.bakabar.com/storage/20250905/151509-ibu-ibu-bersama-anak-mereka-mengikuti-tradisi-baayun-maulid-di-masjid-al-mukarramah-desa-banua-halat-kecamatan-tapin-utara-kabupaten-tapin-foto---bakabarcomsandy-webp-large.jpg">
+      <h4>Upacara Baayun Mulud</h4>
+      <p>Tradisi adat Banjar untuk anak-anak pada acara tertentu.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Pariwisata Kalimantan Selatan
+</footer>
+
+</body>
+</html>
